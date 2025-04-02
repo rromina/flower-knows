@@ -1,0 +1,316 @@
+/*estilos para mobile*/
+
+/*slider*/
+.contenedorSlider {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedorSlider>div {
+    width: 200%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    animation: deslizarSlider 20s ease-in-out infinite;
+}
+
+.contenedorSlider>div>div {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contenedorSlider>div>div:nth-of-type(1){
+    width: 100%;
+    background-image: url(../images/slider/20250110-143109.webp);
+    
+}
+
+.contenedorSlider>div>div:nth-of-type(2){
+    width: 100%;
+    background-image: url(../images/slider/2cfaccb7b7ecc7dae72e08d08d300336_7076b2c5-929e-42a2-8468-5097f7e92406.webp);
+}
+
+
+/*info slider*/
+.infoSlider {
+    height: 35vh;
+    width: auto;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 400;   
+    padding: 35px 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSlider>span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    color: var(--negro-dos);
+    box-sizing: border-box;
+}
+
+.infoSlider p,.infoSlider h2,.galeriaProductos h2, .galeriaProductos p {
+    padding: 0;
+    margin: 0;
+}
+
+.infoSlider>span>p:first-child {
+    font-size: 15px;
+}
+
+.infoSlider>span>h2 {
+    font-family: fangsong;
+    font-weight: 900;
+}
+
+.infoSlider>span>button {
+    border: none;
+    background-color: var(--rosa-dos);
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 600; 
+    margin-top: 20px; 
+
+}
+
+/*primera galeria de productos*/
+.galeriaProductos{
+    height: auto;
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 400;   
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: var(--rosa-tres);
+}
+
+.galeriaProductos>span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    text-align: center;
+    color: var(--negro-dos);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.galeriaProductos>button 
+{
+    width: 80%;
+    background-color: white;
+    color: var(--negro-dos);
+    border: 1px solid #f2f2f2;
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 15px 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 400;   
+}
+
+.galeriaWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.galeriaCarrusel {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding-block: 10px;
+    box-sizing: border-box;
+}
+
+.galeriaCarrusel article {
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+.galeriaCarrusel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeriaCarrusel article p 
+{
+    font-size: 13px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Flechas ocultas por defecto (mobile) */
+.arrow {
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    color: var(--negro-dos);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 400;   
+    padding-bottom: 50px;
+}
+
+.banner>img{
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.banner p {
+    padding: 0 15px;
+}
+
+.banner>span>p:nth-of-type(2){
+    font-family: 'icomoon';
+    color: #3f3f3f;
+    font-size: 20px;
+}
+
+.banner>span>button {
+    border: none;
+    background-color: var(--rosa-uno);
+    width: 80%;
+    margin-left: 10%;
+    padding: 15px 0;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 600; 
+    margin-top: 20px; 
+}
+
+@keyframes deslizarSlider {
+    0% {
+        transform: translateX(0%);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    90% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*estilos para tablet*/
+@media (min-width: 768px){
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.8);
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .arrow.left {
+        left: 10px;
+    }
+
+    .arrow.right {
+        right: 10px;
+    }
+
+    .galeriaCarrusel article {
+        flex: 0 0 25%; 
+    }
+
+    .infoSlider{
+        position: absolute;
+        z-index: 10;
+        background: #ffffffd6;
+        top: 56vh;
+        height: 20vh;
+        left: 2%;
+        width: 50%;
+    }
+
+    .banner>span {
+        width: 70%;
+        display: flex;
+        margin-left: 15%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*estilos para desktop*/
+@media (min-width: 1024px){
+
+    .infoSlider{
+        max-width: 470px;
+        padding: 50px;
+    }
+
+    .galeriaProductos{
+        padding: 50px 10%;
+    }
+
+    .banner 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .banner>img, .banner>span
+    {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .banner>span>button 
+    {
+        margin-left: 0;
+    }
+}

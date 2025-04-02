@@ -1,0 +1,60 @@
+footer{
+    background-color: var(--rosa-tres);
+    width: 100%;
+    height: auto;
+}
+
+.contactFooter{
+    width: 100%;
+    padding: 50px 30px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 300; 
+    box-sizing: border-box;
+    color: var(--gris-uno);
+    text-align: center;
+}
+
+.contactFooter>p:nth-of-type(1){
+    color: #727272;
+    font-family: 'icomoon';
+    color: #3f3f3f;
+    font-size: 20px;
+}
+
+.contactFooter input {
+    width: 80%; 
+    background-color: transparent;
+    border: unset;
+    border-bottom: 0.5px solid #acacac;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: .06em;
+    line-height: 1.25;
+    font-weight: 300; 
+    box-sizing: border-box;
+    color: var(--gris-uno);
+    font-size: 15px;
+}
+
+
+
+/*estilos para tablet*/
+@media (min-width: 768px){
+    .contactFooter 
+    {
+        padding: 70px 100px;
+    }
+    
+}
+
+
+/*estilos para desktop*/
+@media (min-width: 1024px){
+    .contactFooter{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
